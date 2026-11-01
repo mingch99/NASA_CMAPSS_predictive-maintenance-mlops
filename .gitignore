@@ -218,3 +218,20 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ===== Project-specific =====
+# Data: keep folder structure, ignore actual data files
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Model artifacts & MLflow
+*.pkl
+*.joblib
+*.pt
+mlruns/
+mlartifacts/
+
+# macOS
+.DS_Store
